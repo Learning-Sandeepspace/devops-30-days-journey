@@ -1,0 +1,14 @@
+services:
+  web:
+    image: nginx:latest
+    container_name: day12-web
+    ports:
+      - "8086:80"
+    restart: unless-stopped
+
+  api:
+    image: nginx:latest
+    container_name: day12-api
+    ports:
+      - "8087:80"
+    restart: unless-stopped
